@@ -1,0 +1,146 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 100px;
+    position: relative;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+    transition: right 0.5s ease;
+}
+
+.nav-menu img {
+    width: 100px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+img {
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-connect {
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #DA7C25 0.36%, #B923E1 102.06%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.nav-connect:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li img {
+    margin: auto;
+}
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-mob-open {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.nav-mob-close {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 20px;
+    align-self: flex-end;
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        margin: 20px 40px;
+    }
+
+    .nav-menu {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        margin: 20px;
+    }
+
+    .nav-connect {
+        display: none;
+    }
+
+    .nav-mob-open {
+        display: block;
+        position: absolute;
+        right: -200px;
+        top: 20px;
+    }
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 20px;
+  transition: right 0.5s ease;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 70%;
+  max-width: 300px;
+  height: 100%;
+  background-color: #1F0016;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 30px;
+  z-index: 1000;
+}
+
+
+.nav-mob-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .nav-menu li {
+        font-size: 22px;
+        flex-direction: row;
+        padding-left: 10px;
+        gap: 10px;
+    }
+    
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+.nav-menu.active {
+right: 0;
+}
