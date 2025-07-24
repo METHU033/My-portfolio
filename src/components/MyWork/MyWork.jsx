@@ -1,7 +1,7 @@
 import React from 'react'
 import './MyWork.css'
-import theme_pattern from '../../assets/theme_pattern.png'
-import mywork_data from '../../assets/mywork_data'
+import theme_pattern from '@/assets/theme_pattern.png'
+import mywork_data from '@/assets/mywork_data'
 // import next_icon from '../../assets/next_icon.png'
 
 

@@ -1,9 +1,9 @@
 import React from 'react'
 import './Contact.css'
-import theme_pattern from '../../assets/theme_pattern.png'
-import mail_icon from '../../assets/mail_icon.png'
-import phone_icon from '../../assets/phone_icon.png'
-import location_icon from '../../assets/location_icon.png'
+import theme_pattern from '@/assets/theme_pattern.png'
+import mail_icon from '@/assets/mail_icon.png'
+import phone_icon from '@/assets/phone_icon.png'
+import location_icon from '@/assets/location_icon.png'
 
 const Contact = () => {
 
