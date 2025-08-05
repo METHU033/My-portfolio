@@ -12,6 +12,17 @@
     font-size: 20px;
     max-width: 400px;
 }
+.me{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+}
+
+.me:hover{
+    transform: scale(1.05);
+}
 .footer-top-right{
     display: flex;
     align-items: center;

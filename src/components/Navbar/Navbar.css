@@ -5,6 +5,18 @@
     margin: 20px 100px;
     position: relative;
 }
+.meme{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    margin-left: -3rem;
+}
+
+.meme:hover{
+    transform: scale(1.05);
+}
 
 .nav-menu {
     display: flex;
