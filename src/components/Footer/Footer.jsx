@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import footer_logo from '@/assets/footer_logo.png'
-import logo from '@/assets/logo.png'
+import Logo from '@/assets/Logo.png'
 
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
     <div className='footer' id='footer'>
      <div className="footer-top">
         <div className="footer-top-left">
-           <img src={logo} alt="" />
+           <img src={Logo} alt="" />
            <p>I am a frontend developer from, RWANDA with 10 years of exprience in companies like Tost Group, Ishyiga Software and KPL</p>
         </div>
         <div className="footer-top-right">
