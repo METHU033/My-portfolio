@@ -5,60 +5,106 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from "@/assets/menu_open.svg";
 import menu_close from "@/assets/menu_close.svg";
 
-
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef();
 
-  const openMenu = () => {
-    menuRef.current.classList.add("active");
-  };
-
-  const closeMenu = () => {
-    menuRef.current.classList.remove("active");
+  const toggleMenu = () => {
+    if (menuOpen) {
+      menuRef.current.classList.remove("active");
+      setMenuOpen(false);
+    } else {
+      menuRef.current.classList.add("active");
+      setMenuOpen(true);
+    }
   };
 
   return (
     <div className="navbar" id="navbar">
       <h1 className="meme">METHUCELLA</h1>
-      <img src={menu_open} alt="Open Menu"
-        className="nav-mob-open"
-        onClick={openMenu}
-      />
-      <ul className="nav-menu" ref={menuRef}>
+
+      
+      {!menuOpen && (
+        <img
+          src={menu_open}
+          alt="Open Menu"
+          className="nav-mob-open"
+          onClick={toggleMenu}
+        />
+      )}
+      {menuOpen && (
         <img
           src={menu_close}
           alt="Close Menu"
           className="nav-mob-close"
-          onClick={closeMenu}
+          onClick={toggleMenu}
         />
+      )}
+
+      <ul className="nav-menu" ref={menuRef}>
         <li>
           <AnchorLink className="anchor-link" href="#home">
-            <p onClick={() => setMenu("home")}>Home</p>
+            <p
+              onClick={() => {
+                setMenu("home");
+                toggleMenu(); 
+              }}
+            >
+              Home
+            </p>
           </AnchorLink>
           {menu === "home" && <img src={underline} alt="" />}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#about">
-            <p onClick={() => setMenu("about")}>About Me</p>
+            <p
+              onClick={() => {
+                setMenu("about");
+                toggleMenu();
+              }}
+            >
+              About Me
+            </p>
           </AnchorLink>
           {menu === "about" && <img src={underline} alt="" />}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#services">
-            <p onClick={() => setMenu("services")}>Services</p>
+            <p
+              onClick={() => {
+                setMenu("services");
+                toggleMenu();
+              }}
+            >
+              Services
+            </p>
           </AnchorLink>
           {menu === "services" && <img src={underline} alt="" />}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#work">
-            <p onClick={() => setMenu("work")}>Portfolio</p>
+            <p
+              onClick={() => {
+                setMenu("work");
+                toggleMenu();
+              }}
+            >
+              Portfolio
+            </p>
           </AnchorLink>
           {menu === "work" && <img src={underline} alt="" />}
         </li>
         <li>
           <AnchorLink className="anchor-link" offset={50} href="#contact">
-            <p onClick={() => setMenu("contact")}>Contact</p>
+            <p
+              onClick={() => {
+                setMenu("contact");
+                toggleMenu();
+              }}
+            >
+              Contact
+            </p>
           </AnchorLink>
           {menu === "contact" && <img src={underline} alt="" />}
         </li>

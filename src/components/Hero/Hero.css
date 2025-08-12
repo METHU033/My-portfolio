@@ -62,3 +62,32 @@
 .hero-resume:hover{
     border-color: #b415ff;
 }
+
+@media (max-width: 768px) {
+  .hero img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+    width: 90%;
+  }
+
+  .hero p {
+    font-size: 18px;
+    width: 80%;
+    line-height: 30px;
+  }
+
+  .hero-action {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-connect,
+  .hero-resume {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}

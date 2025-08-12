@@ -120,3 +120,44 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+
+@media (max-width: 1024px) {
+  .contact {
+    margin: 80px 60px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .contact-left h1 {
+    font-size: 60px;
+  }
+
+  .contact-right input,
+  .contact-right textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    margin: 60px 30px;
+  }
+
+  .contact-title h1 {
+    font-size: 48px;
+  }
+
+  .contact-left p,
+  .contact-right label {
+    font-size: 18px;
+  }
+
+  .contact-submit {
+    font-size: 18px;
+    padding: 15px 40px;
+  }
+}
