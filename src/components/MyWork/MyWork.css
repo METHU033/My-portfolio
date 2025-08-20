@@ -78,7 +78,12 @@
   }
 
   .mywork-title h1 {
-    font-size: 48px;
+    font-size: 38px;
+  }
+  .mywork-title img{
+    width: 10rem;
+    height: 2rem;
+    top: 20px;
   }
 
   .mywork-container {

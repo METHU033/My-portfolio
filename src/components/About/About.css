@@ -130,6 +130,12 @@
     gap: 50px;
   }
 
+  .about-title img{
+    width: 13rem;
+    height: 2rem;
+    top: 45px;
+  }
+
   .about-left img {
     width: 250px;
     height: 350px;

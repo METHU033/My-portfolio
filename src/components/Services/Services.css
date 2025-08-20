@@ -94,6 +94,11 @@
   .services-title h1 {
     font-size: 48px;
   }
+  .services-title img{
+    width: 10rem;
+    height: 2rem;
+    top: 30px;
+  }
 
   .services-container {
     grid-template-columns: 1fr;

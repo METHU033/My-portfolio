@@ -101,6 +101,10 @@
     margin: 40px 20px;
   }
 
+  .footer-top-left h1{
+    font-size: 35px;
+  }
+
   .footer-top-right {
     flex-direction: column;
     gap: 20px;
@@ -108,6 +112,6 @@
 
   .footer-subscribe {
     font-size: 18px;
-    padding: 15px 40px;
+    padding: 15px 7.5rem;
   }
 }
