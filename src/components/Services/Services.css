@@ -92,12 +92,12 @@
   }
 
   .services-title h1 {
-    font-size: 48px;
+    font-size: 35px;
   }
   .services-title img{
-    width: 10rem;
-    height: 2rem;
-    top: 30px;
+    width: 8rem;
+    height: 1.5rem;
+    top: 20px;
   }
 
   .services-container {

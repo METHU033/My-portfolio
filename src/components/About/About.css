@@ -130,10 +130,14 @@
     gap: 50px;
   }
 
+  .about-title h1 {
+    font-size: 30px;
+  }
+
   .about-title img{
-    width: 13rem;
-    height: 2rem;
-    top: 45px;
+    width: 5rem;
+    height: 1rem;
+    top: 20px;
   }
 
   .about-left img {

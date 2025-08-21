@@ -64,7 +64,7 @@ const Navbar = () => {
                 toggleMenu();
               }}
             >
-              About Me
+              About me
             </p>
           </AnchorLink>
           {menu === "about" && <img src={underline} alt="" />}
