@@ -49,8 +49,8 @@ const Services = () => {
         </div>
         <div className="service">
             <h3>05</h3>
-          <h2>Digital Marketing</h2>
-          <p>I create and manage digital marketing campaigns to promote your brand.</p>
+          <h2>Blog Sites</h2>
+          <p>I develop and maintain blog sites to share your ideas and stories with the world.</p>
           <div className="services-readmore">
             {/* <p>Read More</p> */}
             {/* <img src={next_icon} alt="" /> */}

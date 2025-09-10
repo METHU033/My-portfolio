@@ -17,7 +17,9 @@
 .mywork-title img{
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 80px;
+    top: 60px;
+    height: 30px;
     z-index: -1;
 }
 .mywork-container{
@@ -29,6 +31,7 @@
     box-sizing: border-box;
     width: 250px;
     height: 260px;
+    object-fit: cover;
     border-radius: 1rem;
     transition: 0.3s;
     cursor: pointer;
@@ -44,7 +47,7 @@
     gap: 15px;
     border: 2px solid white;
     border-radius: 50px;
-    padding: 20px 30px;
+    padding: 15px 30px;
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 50px;
@@ -54,11 +57,180 @@
 .mywork-showmore img{
     width: 40px;
     height: 25px;
+    margin-top: 5px;
 }
 .mywork-showmore:hover{
    gap: 30px;
    transition: 0.6s;
 }
+
+.mywork-showmore button {
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.mywork-showmore button:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.mywork-showmore a,button {
+  text-decoration: none;
+  color: white;
+}
+
+.mywork-subtitle {
+  text-align: center;
+  max-width: 700px;
+  margin: 10px auto 40px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.mywork-card {
+  background: #111827; /* dark card */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.mywork-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.mywork-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.mywork-content {
+  padding: 15px 20px;
+}
+
+.mywork-content h3 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.mywork-content p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Image wrapper */
+.mywork-img-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+}
+
+/* Normal image */
+.mywork-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+/* Dark overlay */
+.mywork-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+/* Overlay text */
+.mywork-overlay h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Hover effects */
+.mywork-img-container:hover .mywork-overlay {
+  opacity: 1;
+}
+
+.mywork-img-container:hover .mywork-img {
+  transform: scale(1.1);
+}
+
+
+.mywork-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tag {
+  background: #1f2937; /* dark gray pill */
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid #333;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.tag:hover {
+  background: #ff00ff; /* your accent color */
+  transform: scale(1.05);
+}
+
+.mywork-card {
+  background: #111827;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* remove underline */
+  color: white;          /* text white */
+  display: flex;
+  flex-direction: column;
+}
+
+.mywork-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+
 
 @media (max-width: 1024px) {
   .mywork {
@@ -84,6 +256,7 @@
     width: 8rem;
     height: 1rem;
     top: 20px;
+    right: 50px;
   }
 
   .mywork-container {
