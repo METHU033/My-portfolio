@@ -22,7 +22,7 @@ const mywork_data = [
   },
   {
     w_no: 3,
-    w_name: "Dumodo",
+    w_name: "Smart To-Do",
     w_img: galleryc_img,
     link: "https://your-link-3.com",
     tags: ["Next.js", "MongoDB", "Express"]

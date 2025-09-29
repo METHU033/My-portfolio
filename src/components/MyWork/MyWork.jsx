@@ -43,12 +43,7 @@ const MyWork = () => {
         ))}
       </div>
 
-       <a 
-        href="https://virtual-one-pi.vercel.app/" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="mywork-showmore"
-       >
+       <a className="mywork-showmore">
         <button>Show More</button>
         <img src={next_icon} alt=""/>
        </a>
