@@ -21,10 +21,10 @@ const About = () => {
         concepts into interactive digital experiences using modern web technologies.</p>
         </div>
         <div className="about-skills">
-          <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"50%"}}/></div>
-          <div className="about-skill"><p>REACT JS</p><hr style={{width:"70%"}}/></div>
-          <div className="about-skill"><p>- - - AI - - -</p><hr style={{width:"60%"}}/></div>
-          <div className="about-skill"><p>NEXT JS</p><hr style={{width:"50%"}}/></div>
+          <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"70%"}}/></div>
+          <div className="about-skill"><p>REACT JS</p><hr style={{width:"60%"}}/></div>
+          <div className="about-skill"><p>- - - AI - - -</p><hr style={{width:"40%"}}/></div>
+          <div className="about-skill"><p>NEXT JS</p><hr style={{width:"30%"}}/></div>
           </div>        
       </div>
     </div>

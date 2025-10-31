@@ -105,3 +105,22 @@
     gap: 25px;
   }
 }
+
+@media (max-width: 375px) {
+  .services {
+    margin: 20px 5px;
+    gap: 30px;
+  }
+  .services-title h1 {
+    font-size: 18px;
+    padding: 0 5px;
+  }
+  .service p {
+    font-size: 12px;
+    max-width: 100%;
+  }
+  .service {
+    width: 100%;
+    padding: 15px;
+  }
+}

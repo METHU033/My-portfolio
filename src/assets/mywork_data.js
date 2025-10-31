@@ -1,9 +1,9 @@
 import gallerya_img from '../assets/gallery_a.png'
-import galleryb_img from '../assets/gallery_b.png'
+import galleryb_img from '../assets/gallery_b.jpeg'
 import galleryc_img from '../assets/gallery_c.png'
-import galleryd_img from '../assets/gallery_d.png'
-import gallerye_img from '../assets/gallery_e.png'
-import galleryf_img from '../assets/gallery_f.png'
+import galleryd_img from '../assets/gallery_d.jpeg'
+import gallerye_img from '../assets/gallery_e.jpeg'
+import galleryf_img from '../assets/gallery_f.jpeg'
 
 const mywork_data = [
   {

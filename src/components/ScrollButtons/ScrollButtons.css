@@ -42,3 +42,16 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 375px) {
+  .scroll-buttons {
+    right: 10px;
+    bottom: 10px;
+    gap: 5px;
+  }
+  .scroll-button {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+}

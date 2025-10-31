@@ -169,3 +169,32 @@ img {
     height: auto;
   }
 }
+
+@media (max-width: 375px) {
+  .navbar {
+    margin: 10px 2px;
+  }
+  .navbar h1 {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .nav-menu {
+    width: 90vw;
+    padding: 40px 5px;
+    gap: 10px;
+    font-size: 12px;
+  }
+  .nav-menu li {
+    font-size: 12px;
+    padding-left: 2px;
+    gap: 2px;
+  }
+  .nav-mob-open, .nav-mob-close {
+    width: 30px;
+    height: 30px;
+  }
+  img {
+    width: 60px;
+    height: auto;
+  }
+}
