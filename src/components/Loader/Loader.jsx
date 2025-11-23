@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loader.css";
-import logo from "@/assets/logo.png"; // <-- use your portfolio logo
+import logo from "@/assets/logo.png";
 
 const Loader = () => {
   return (
